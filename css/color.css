@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
+@font-face {
+    font-family: 'new font';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KyoboHandwriting2022khn.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.font-pc {
+	font-family: new font, "Times New Roman", Dotum, "돋움", sans-serif;
+}
+
+body {
+    font-family: new font, "Times New Roman", Dotum, "돋음", sans-serif;
+    border: 2px solid salmon;
+    border-left-width: 240px;
+    border-right-width: 240px;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main {
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+.slogan {
+    text-align: center;
+}
+
+
+
+
