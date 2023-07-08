@@ -1,7 +1,80 @@
-.box1 {
-    background-color: #464964;
-    color: white;
-    border: 2px solid black;
-    box-shadow: 50px 50px 0px 0px;
+/* CSS alignment order found online
+    .myClass {
+ ├── 객체의 노출여부와 표현방식
+ │   ├── display
+ │   └── list-style
+ │
+ ├── 위치와 좌표
+ │   ├── position
+ │   ├── float
+ │   └── clear
+ │
+ ├── 크기와 여백
+ │   ├── width / height
+ │   └── padding / margin
+ │
+ ├── 윤곽과 배경
+ │   └── border / background
+ │
+ ├── 글자와 정렬
+ │   ├── corlor / font
+ │   ├── text-decoration
+ │   ├── text-align / vertical-align
+ │   └── white-space
+ │
+ └── 내용
+     └── content
+*/
+
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
+/* box-shadow 말고 위랑 아래에 적용하는 방법? 찾아보니 padding엔 별도로 색깔을 적용 못한다던데 */
+.box1 {
+    max-height: 60px;
+    max-width: 60px;
+    margin: auto;
+    padding-left: 3px;
+    border: 1px solid #000;
+    background-color: #343F50;
+    color: white;
+    text-align: center;
+    font-family: 'omyu_pretty', serif;
+    box-shadow: inset 2px 2px 2px #4A5568;
+}
+
+
+/* does background-clip have to come after background? it seems that 
+background-clip does not get applied if it comes beforehand
+*/
+.box2 {
+    max-width: 80px;
+    max-height: 80px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px dashed #D9C4E3;
+    border-radius: 30px 30px 30px 30px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(149,101,230,1) 0%, rgba(0,123,255,1) 100%);
+    background-clip: padding-box;
+    color: white;
+    text-align: center;
+    font-family: 'omyu_pretty', seif;
+    
+}
+
+.box3 {
+    max-width: 80px;
+    max-height: 80px;
+    margin: auto;
+    padding-bottom: 4px;
+    border: 1px solid #DEDEDE;
+    border-radius: 0px 30px 30px 30px;
+    font-family: 'omyu_pretty', seif;
+    text-align: center;
+    box-shadow: 3px 3px 4px 0.1px rgba(222,222,222,5);
+}
