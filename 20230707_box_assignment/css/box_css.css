@@ -34,6 +34,7 @@
 }
 
 /* box-shadow 말고 위랑 아래에 적용하는 방법? 찾아보니 padding엔 별도로 색깔을 적용 못한다던데 */
+/* div를 따로 넣거나 border-outline (보더 밖을 덮는 속성)을 넣어도됨. */
 .box1 {
     max-height: 60px;
     max-width: 60px;
@@ -45,6 +46,11 @@
     text-align: center;
     font-family: 'omyu_pretty', serif;
     box-shadow: inset 2px 2px 2px #4A5568;
+}
+
+.box1 p {
+    width: 100px;
+    height: 32px;
 }
 
 
