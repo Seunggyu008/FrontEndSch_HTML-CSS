@@ -1,0 +1,57 @@
+/* css 초기화 */
+h1, h2, p {
+    margin: unset;
+    padding: unset;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: unset;
+    font-weight: unset;
+}
+
+body {
+    background-image: url(/20230714/funnycss_1/profile/images/background.gif);
+}
+
+.wrapper {
+    background-color: white;
+    width: 800px;
+    height: auto;
+    margin: 100px auto;
+}
+
+/* div이면서 header인 선택자 */
+.header {
+    background-image: url(/20230714/funnycss_1/profile/images/cover05.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+.header h1 {
+    text-align: center;
+}
+
+.header p {
+    border-top: 4px solid white;
+    color: inherit;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+.img {
+    margin: 0 auto;
+    display: block;
+}
+
+
+h1 {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+}
