@@ -179,6 +179,12 @@ body {
   margin: 0 auto;
 }
 
+/* .card-list {
+  display: grid;
+  gap: 32px 24px;
+  grid-template-columns: repeat(auto-fill, minmax(288px, auto));
+} */
+
 .notice {
     width: 1224px;
     /* 브라우저 사이즈가 변경되었을때 좌우 여유 여벡을 넣기위해 calc를 사용하여 여백을 줌 */

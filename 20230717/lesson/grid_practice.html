@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+            "a a b"
+            "c d b"
+            "e f f"
+            ;
+            width: 520px;
+            height: 520px;
+            grid-template-columns: 2fr 1fr 2fr;
+            grid-template-rows: 2fr 1fr 2fr;
+        }
+
+        .blue {
+            background-color: blue;
+            grid-area: a;
+        }
+
+        .yellow {
+            background-color: yellow;
+            grid-area: b;
+        }
+
+        .purple {
+            background-color: rgb(200, 41, 200);
+            grid-area : c;
+        }
+
+        .orange {
+            background-color: orange;
+            grid-area: d;
+        }
+
+        .green {
+            background-color: green;
+            grid-area: e;
+        }
+
+        .salmon {
+            background-color: salmon;
+            grid-area: f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "blue">Blue</div>
+        <div class = "yellow">Yellow</div>
+        <div class = "purple">Purple</div>
+        <div class = "orange">살구</div>
+        <div class = "green">Green</div>
+        <div class = "salmon">Salmon</div>
+    </div>
+</body>
+</html>

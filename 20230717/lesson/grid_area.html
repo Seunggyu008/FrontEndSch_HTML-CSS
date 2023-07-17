@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container {
+            width: 600px;
+            height: 600px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;
+            grid-template-rows: 2fr 1fr 2fr;
+            gap: 10px;
+            /* grid-template-areas: 
+                "blue blue yellow"
+                "purple orange yellow"
+                "salmon green green"
+            ; */
+            grid-template-rows: 1fr 3fr 1fr;
+        }
+
+        .blue {
+            background-color: blue;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .yellow {
+            background-color: yellow;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .purple {
+            background-color: rgb(200, 41, 200);
+            grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .orange {
+            background-color: orange;
+            grid-row-start: 2;
+            grid-row-end: 1;
+            grid-column-start: 3;
+            grid-column-end: 2;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .salmon {
+            background-color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "blue">Blue</div>
+        <div class = "yellow">Yellow</div>
+        <div class = "purple">Purple</div>
+        <div class = "orange">살구</div>
+        <div class = "green">Green</div>
+        <div class = "salmon">Salmon</div>
+    </div>
+</body>
+</html>
