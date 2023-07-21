@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frog</title>
+    <style>
+        body {
+            background-color: brown;
+        }
+
+        .playground{
+            border: 10px solid maroon;
+            width: 980px;
+            margin: 0 auto;
+            border-radius: 20px;
+            background-color: skyblue;
+            display: flex;
+        }
+
+        .frog {
+            background-color: mediumseagreen;
+            color: lime;
+            font-size: 40px;
+            margin: 10px;
+            border: 6px solid green;
+            border-radius: 10px;
+            /* flex-basis: auto는 컨텐츠의 크기만큼 커진다 */
+            flex-basis: 200px;
+            flex-shrink: 1px;
+        }
+
+        /* margin: auto 사용가능한 공백을 여백으로 계산해줌 */
+        .frog.covid {
+            background-color: red;
+            flex-shrink: 0;
+        }
+
+        .frog.one {
+            flex-shrink: 200;
+        }
+
+        .frog.two {
+            /* flex-grow: 1; */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class = "playground">
+        <div class = "frog one">Frog</div>
+        <div class = "frog covid">Frog</div>
+        <div class = "frog two">Frog</div>
+        <div class = "frog two">Frog</div>
+        <div class = "frog two">Frog</div>
+        <div class = "frog two">Frog</div>
+        <div class = "frog two">Frog</div>
+    </div>
+</body>
+</html>

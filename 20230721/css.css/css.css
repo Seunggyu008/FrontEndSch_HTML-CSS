@@ -1,0 +1,41 @@
+.wrapper {
+    box-shadow: inset 0 0 20px red;
+    width: 800px;
+    /* margin 상 하단 오토는 안됨
+    되는 케이스는 flex, grid, position을 사용할땐 가능 */
+    margin: 100px auto;
+    text-align: center;
+}
+
+.fruit {
+    background-color: black;
+    display: inline-block;
+    /* width auto로 둘시 available space, 즉 이 경우 wrapper의 최대 사이즈만큼 늘어남*/
+    /* width는 inherit이 된다 */
+    width: 200px;
+    height: 200px;
+    /* 왜 좌우의 padding과 margin은 가능할까? inline은 좌우로는 이동이 가능하기때문. 
+    마찬가지로 height는 위 아래로 적용되기때문에 inline에 적용이 안됨 */
+    line-height: 200px;
+    border-radius: 50%;
+}
+
+/* css에는 순서가 중요하기때문에 세가지의 공통된 속성은 부모인 fruit 클래스에 적용되야하지만
+각각 자식 속성에 적용하기위해선 개별적으로 적용해야된다. */
+.lemon {
+    background-color: lemonchiffon;
+}
+
+.orange {
+    background-color: gold;
+}
+
+.grapefruit {
+    background-color: salmon;
+}
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respondsive Grid System</title>
+    <style>
+        .container {
+            box-shadow: inset 0 0 20px red;
+            width: 600px;
+            margin: 100px auto;
+            display: flex;
+        }
+
+        .sidebar {
+            box-shadow: inset 0 0 20px blue;
+            width: 200px;
+            flex-basis: auto;
+            
+        }
+
+        .main {
+            box-shadow: inset 0 0 20px orangered;
+            flex-basis: auto;
+            flex-grow: 1;
+            padding: 10px;
+            min-width: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class= "sidebar">Sidebar</div>
+        <div class = "main">MainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMainMain</div>
+    </div>
+    
+</body>
+</html>
+
+<!-- 
+    지금 min-width (기본값 auto)가 별도로 지정이 안되있기 때문에 컨텐츠의 크기만큼 최소너비가 지정된다.
+    따라서 컨텐츠가 커지면 레이아웃역시 같이 커져서 변형된다.
+!-->
+
+<!--  
+    flex-box를 쓸떈:
+    1. min-width를 0으로 주거나
+    2. flex-shrink를 0으로 줘서
+    레이아웃의 변형이 
+    
+-->

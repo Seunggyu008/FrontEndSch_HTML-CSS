@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜딩페이지 | 두근두근다이어리</title>
+    <link rel = "stylesheet" href = "css/common.css" />
+    <link rel = "stylesheet" href = "css/main.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class = "header">
+        <div class = "max-width">
+            <h1>
+                <a href ="./">
+                    <img src = "/Diary/images/img/logo.svg" alt = "두근두근 다이어리" />
+                </a> 
+            </h1>
+
+            <div class = "login-text">
+                <p>환영합니다 <strong>홍길동</strong></p>
+                <button type = "button" class = "btn-logout">로그아웃</button>
+            </div>
+        </div>
+    </header>
+    <!-- //Header -->
+
+    <!-- Main -->
+    <main class = "main main-width">
+        <section class = "main-form">
+            <h2 class = "heart-title">2023.02.27의 비밀일기</h2>
+            <form class = "form">
+                <div>
+                    <label for = "diary-title" class = "ally-hidden">제목</label>
+                    <input id = "diary-title" type = "text" placeholder = "제목">
+                </div>
+
+                <div>
+                    <label for = "diary-content" class = "ally-hidden">내용</label>
+                    <textarea id = "diary-content" placeholder = "오늘의 비밀은 무엇인가요?"></textarea>
+                </div>
+
+                <button type = "submit">작성하기</button>
+            </form>
+        </section>
+
+        <section class = "main-diary">
+            <h2 class ="ally-hidden">일기 목록</h2>
+
+            <ol class = "list">
+                <li>
+                    <article class = "diary-article">
+                        <header>
+                            <h3 class = "article-title">lorem</h3>
+                            <time class = "diary-time" datetime = "2023-02-24">2023.02.24.THU</time>
+                        </header>
+                        <p class = "diary-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur vitae minus accusamus debitis nisi earum, quia nobis iusto, sunt ipsam vel suscipit voluptatem distinctio assumenda beatae iste, similique qui labore!</p>
+
+                        <div class = "button-group">
+                            <button type = "button">
+                                <img src = "./images/img/icon-edit.svg" alt = "수정" />
+                            </button>
+                            <span></span>
+                            <button type = "button">
+                                <img src = "./images/img/icon-delete.svg" alt = "삭제" />
+                            </button>
+                        </div>
+                        
+                    </article>
+                </li>
+
+                <li>
+                    <article class = "diary-article">
+                        <header>
+                            <h3 class = "article-title">lorem</h3>
+                            <time class = "diary-time" datetime = "2023-02-24">2023.02.24.THU</time>
+                        </header>
+                        <p class = "diary-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur vitae minus accusamus debitis nisi earum, quia nobis iusto, sunt ipsam vel suscipit voluptatem distinctio assumenda beatae iste, similique qui labore!</p>
+                    </article>
+                </li>
+            </ol>
+
+        </section>
+    </main>
+
+</body>
+</html>
