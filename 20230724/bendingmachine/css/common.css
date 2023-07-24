@@ -1,0 +1,70 @@
+h1,
+h2
+p {
+    margin: 0;
+    font-style: none;
+}
+
+body {
+    background-color: #EAE8FE;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    max-width: 720px;
+
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "a c"
+    "a c";
+    gap: 20px;
+}
+
+.bending {
+    width: 360px;
+    height: 577px;
+    background-color: white;
+    grid-area: a;
+}
+
+.current {
+    width: 360px;
+    height: 50px;
+    background-color: white;
+    grid-area: b;
+}
+
+.obtained {
+    width: 360px;
+    height: 507px;
+    background-color: white;
+    grid-area: c;
+}
+
+.bending {
+    display: grid;
+    grid-template-areas:
+    "a"
+    "b"
+}
+
+.lists-Drinks {
+    width: 94px;
+    height: 130px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.50);
+    grid-area: a;
+
+    display: grid;
+    grid-row-start: 1;
+}
+
+
+.shopping-cart{
+    grid-area: b;
+}
