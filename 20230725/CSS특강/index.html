@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayGround</title>
+    <style>
+        body {
+            background-color: brown;
+        }
+
+        .playground {
+            border: 10px solid maroon;
+            width: 980px;
+            margin: auto auto;
+            border-radius: 20px;
+            background-color: skyblue;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+ /*         */.frog {
+            background-color: mediumseagreen;
+            color: lime;
+            font-size: 40px;
+            margin: 10px;
+            border: 6px solid green;
+            border-radius: 10px;
+            flex-basis: 200px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<!-- position을 쓰고 left: 0 right:0 또는 top:0 right: 0를 주게되면 뷰포트 기준으로 다 늘어난다 -->
+<!-- 한 가운데에 정렬하는법, 부모 div에 position: fixed를 주고 topleftrightbottom: 0을 주고 안에 요소에
+    마진오토를 쓰면 뷰포트와 상관없이 가운데에 정렬된다-->
+
+    <!-- topleftrightbottom:0을 하나하나 다 쓰는건 효율적이지 않으니  이렇게 쓴다
+        inset: top right bottom left;
+        inset: 0 0 0 0;-->
+
+<body>
+    <div class = "playground">
+        <div class = "frog">Frog</div>
+        <div class = "frog">Frog</div>
+        <div class = "frog">Frog</div>
+        <div class = "frog">Frog</div>
+        <div class = "frog">Frog</div>
+        <div class = "frog">Frog</div>
+        <div class = "frog">Frog</div>
+        <div class = "frog">Frog</div>
+
+    </div>
+</body>
+</html>

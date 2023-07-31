@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커스텀 Input box</title>
+    <style>
+        .txt-hide {
+            overflow: hidden;
+            /* overflow를 안하고 width랑 height를 0을 줄수도 있으나 
+            브라우저 스크린리더가 없는걸로 인식하게됨*/
+            width: 1px;
+            height: 1px;
+            /* 경로에 따라서 html 요소를 잘라낼수있는 css 함수 */
+            clip-path: inset(50%)
+        }
+
+        .labl-hold {
+            position: relative;
+        }
+
+        .labl-hold:before {
+            display: inline-block;
+            content:'';
+            width: 22px;
+            height: 22px;
+            margin-right: 10px;
+            border: 1px solid black;
+            vertical-align: -5px;;
+        }
+
+        /* 접근성 측면에서 focus-visible을 쓰는게 브라우저가 해당 요소를 tab키를 통해 인식할수있다 */
+        .inp-hold:focus-visible+.labl-hold::before {
+            outline: 2px solid teal;
+            outline-offset: 3px;
+        }
+
+        .labl-hold:after {
+            content: '';
+            /* position 속성을 적용하는 요소는 display가 block으로 바뀐다
+            그렇기에 별도로 display속성을 적용하지 않아도된다. */
+            position: absolute;
+            top: -3px;
+            left: 20px;
+
+            width: 22px;
+            height: 22px;
+            /* background-image: url('images/checkmark.png');
+            background-size: 22px;
+            background-repeat: no-repeat; */
+            background: url('images/checkmark.png') 0 0/22px no-repeat;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        .inphold:checked+.labl-hold::after {
+            left: 0;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <input type = "checkbox" id = "inpHold" class = "inphold txt-hide">
+    <label for = "inpHold" class = "labl-hold">로그인 상태 유지</label>
+</body>
+</html>

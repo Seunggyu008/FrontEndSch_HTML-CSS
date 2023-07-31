@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Optimization</title>
+    <style>
+        img {
+            width: 100%;
+        }
+
+        article {
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+        /* background의 축약속성, 실무에선 축약하는 경우가 많다 */
+        /* article {
+            background: url("mailchimp-YTZOyio3Udk-unsplash.jpg") center/cover no-repeat;
+        } */
+
+        article {
+            background: url("/20230731/mailchimp-YTZOyio3Udk-unsplash.jpg");
+            background-repeat: no-repeat;
+            /* background-size: cover;는 container의 공간만큼 이미지사이즈를 꽉 채움*/
+            /* background-soze: contain은 이미지의 사이즈만큼 채움 */
+            /* 하지만 cover는 반응형이 아니기에 이미지의 사이즈가 뷰포트의 사이즈에 따라 달라지지않는다*/
+            background-size: cover;
+            /* 그렇기에 background-position을 사용해서 이미지의 축을 가운데로 정렬시킬수있다 */
+            background-position: 50% 50%
+        }
+
+    </style>
+</head>
+
+<body>
+    <article></article>
+    <!-- <img src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbrikorea.com%2Frk%2Fig2301&psig=AOvVaw3io5J5gvq8WErX2CPC125A&ust=1690858181201000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCi3Nv3t4ADFQAAAAAdAAAAABAE" alt = "" /> -->
+</body>
+</html>
