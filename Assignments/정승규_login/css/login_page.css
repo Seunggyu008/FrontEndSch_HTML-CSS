@@ -1,0 +1,160 @@
+/* modal centering */
+body {
+    background: var(--gray-6, #F2F2F2); 
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    width: 520px;
+    height: 712px;
+    border-radius: 10px;
+    border: 2px solid #C4C4C4;
+    background: #FFF;
+
+    position: relative;
+    }
+
+/* header */
+header {
+    height: 58px;
+    border-bottom: 1px solid #C4C4C4;
+    background-image: url(/Assignments/정승규_login/images/close.png) no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.header-text {
+    color: #000;
+    font-family: 'SpoqaHanSansNeo', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.modal-container img {
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    left: 480px;
+}
+
+
+
+
+
+/*
+.main-container {
+    height: 653px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.or-text {
+    color: #767676;
+    font-family: 'SpoqaHanSansNeo', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.or-text:before {
+    content:'';
+    width: 210px;
+    height: 1px;
+    background-color: #C4C4C4; 
+}
+
+.or-text:before {
+    content:'';
+    width: 210px;
+    height: 1px;
+    background-color: #C4C4C4; 
+} 
+
+
+.simple-login {
+    height: 284px;
+    width: 520px;
+
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: absolute;
+
+}
+
+.login-button {
+    position: relative;
+}
+
+.login-lists {
+    width: 472px;
+    height: 50px;
+    border-radius: 5px;
+    background: #FFF;
+    margin-top: 10px;
+    position: relative;
+}
+
+.login-lists a {
+    color: var(--767676, #767676);
+    text-align: center;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: absolute;
+    top: 15px;
+    right: 178px;
+}
+
+.simple-login img {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+}
+
+.google {
+    border-radius: 5px;
+    border: 1px solid var(--767676, #767676);
+    background: #FFF;
+}
+
+.fb {
+    border-radius: 5px;
+    border: 1px solid #2D9CDB;
+    background: #FFF;
+}
+
+.naver {
+    border-radius: 5px;
+    border: 1px solid #00BF18;
+    background: #FFF;
+}
+
+.kakaot {
+    border-radius: 5px;
+    border: 1px solid #F2C94C;
+    background: #FFF;
+}
+*/
