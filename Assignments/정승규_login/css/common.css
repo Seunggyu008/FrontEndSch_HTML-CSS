@@ -41,6 +41,10 @@ table {
     border-spacing: 0;
 }
 
+body {
+    background: var(--gray-6, #F2F2F2); 
+}
+
 /* font */
 @font-face {
     font-family: 'SpoqaHanSansNeo';

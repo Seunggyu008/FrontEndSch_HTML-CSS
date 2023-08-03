@@ -1,8 +1,4 @@
-/* modal centering */
-body {
-    background: var(--gray-6, #F2F2F2); 
-}
-
+/* main page centering */
 section {
     width: 100vw;
     height: 100vh;
@@ -12,8 +8,8 @@ section {
 }
 
 .modal-container {
-    width: 520px;
-    height: 712px;
+    max-width: 520px;
+    max-height: 712px;
     border-radius: 10px;
     border: 2px solid #C4C4C4;
     background: #FFF;
@@ -51,7 +47,86 @@ header {
     left: 480px;
 }
 
+/* main area container */
+.main-container {
+    height: 653px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
 
+    position: relative;
+}
+
+/* main input area */
+.input-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* main-text */
+.input-area h2 {
+    width: 369px;
+    height: 24px;
+    margin: 26px 127px 24px 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #000;
+    font-family: 'SpoqaHanSansNeo', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* input form */
+.input-area form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-id {
+    width: 472px;
+    height: 50px;
+
+    border-radius: 5px;
+    border: 1px solid var(--c-4-c-4-c-4, #C4C4C4);
+    background: #FFF;
+    position: relative;
+}
+
+#user-pw {
+    width: 472px;
+    height: 50px;
+    margin-top: 10px;
+
+    border-radius: 5px;
+    border: 1px solid var(--c-4-c-4-c-4, #C4C4C4);
+    background: #FFF;
+    position: relative;
+}
+
+::placeholder {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 16px;
+
+    color:#767676;
+    font-family: 'SpoqaHanSansNeo', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
 
 
 
