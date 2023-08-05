@@ -1,9 +1,8 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+html, body, div, span,
+h1, h2, p
+em, img,
 b, u, i, ol, ul, li,
-fieldset, form, label
+form, label
 {
     margin: 0;
     padding: 0;
@@ -13,29 +12,28 @@ fieldset, form, label
     vertical-align: baseline;
 }
 
+button{
+    background: inherit; 
+    border:none; 
+    box-shadow:none; 
+    border-radius:0; 
+    padding:0; 
+    overflow:visible; 
+    cursor:pointer
+}
+
 a {
     text-decoration: none;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
 body {
     line-height: 1;
 }
-ol, ul {
+
+ol, ul, li {
     list-style: none;
 }
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -43,6 +41,10 @@ table {
 
 body {
     background: var(--gray-6, #F2F2F2); 
+}
+
+.default-font {
+    font-family: 'SpoqaHanSansNeo', sans-serif;
 }
 
 /* font */

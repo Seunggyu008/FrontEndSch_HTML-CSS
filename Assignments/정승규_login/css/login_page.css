@@ -21,7 +21,6 @@ section {
 header {
     height: 58px;
     border-bottom: 1px solid #C4C4C4;
-    background-image: url(/Assignments/정승규_login/images/close.png) no-repeat;
 
     display: flex;
     justify-content: center;
@@ -30,9 +29,9 @@ header {
     position: relative;
 }
 
+
 .header-text {
     color: #000;
-    font-family: 'SpoqaHanSansNeo', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -45,9 +44,10 @@ header {
 
     position: absolute;
     left: 480px;
+    top: 22px;
+    right: 24px;
 }
 
-/* main area container */
 .main-container {
     height: 653px;
     display: flex;
@@ -58,14 +58,16 @@ header {
     position: relative;
 }
 
-/* main input area */
 .input-area {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
+    position: relative;
 }
 
-/* main-text */
+/* 위니브 소개 텍스트 */
 .input-area h2 {
     width: 369px;
     height: 24px;
@@ -76,13 +78,12 @@ header {
     justify-content: center;
 
     color: #000;
-    font-family: 'SpoqaHanSansNeo', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
 }
 
-/* input form */
+/* 아이디&비밀번호 입력창 */
 .input-area form {
     display: flex;
     flex-direction: column;
@@ -128,108 +129,162 @@ input:focus::placeholder {
     color: transparent;
 }
 
-
-
-/*
-.main-container {
-    height: 653px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+/* 체크박스 */
+.checkbox-area {
+    margin: 17px 351px 21px 28px;
 }
-.or-text {
+
+.login-checkbox {
+    /* checkbox styling reset */
+    /* visibility: hidden; */
+}
+
+.checkbox-text {
     color: #767676;
-    font-family: 'SpoqaHanSansNeo', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* 가상요소가 왜 적용이 안될까요...? */
+.checkbox-area::before {
+    background-image: url("../images/check-box-default.svg") no-repeat 22px 22px;
+    content:'';
+}
+
+/* 로그인 버튼 */
+.login-button {
+    width: 472px;
+    height: 50px;
+    border-radius: 5px;
+    background: #2F80ED;
+}
+
+.login-button span {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+/* 회원가입 | 아이디\비번찾기 */
+.signup-findInfo {
+    margin-top: 20px;
+}
+
+.signup-findInfo span {
+    color: #767676;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.or-text:before {
-    content:'';
-    width: 210px;
-    height: 1px;
-    background-color: #C4C4C4; 
+/* 가상요소 사용시 | 전후 공백에 마우스를 hover할시 커서가 pointer로 바뀌어 span으로 추가 */
+/* .findInfo::before {
+    content: '|';
+    margin-right: 12px;
+    margin-left: 12px;
+
+    color:#767676;
+    font-family: 'SpoqaHanSansNeo', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    cursor: default;
+} */
+
+/* ----또는---- divider */
+.or-divider {
+    color: #767676;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    display: flex;
+    align-items: center;
 }
 
-.or-text:before {
+.or-divider::before {
     content:'';
     width: 210px;
     height: 1px;
-    background-color: #C4C4C4; 
-} 
+    margin-right: 13px;
+    background: #c4c4c4;
+}
 
+.or-divider::after {
+    content:'';
+    width: 210px;
+    height: 1px;
+    margin-left: 13px;
+    background: #c4c4c4;
+}
 
-.simple-login {
-    height: 284px;
-    width: 520px;
-
-    background-color: skyblue;
+/* 빠른 로그인 */
+.quick-login-buttons {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
 
+    gap: 10px; 
+}
+
+/* lists styling */
+.quick-login-buttons img {
+    width: 28px;
+    height: 28px;
+    
     position: absolute;
-
+    left: 12px;
+    top: 11px;
 }
 
-.login-button {
+li {
+    display: flex;
+    justify-content: center;
+
     position: relative;
 }
 
-.login-lists {
+li:hover {
+    cursor: pointer;
+}
+
+.lists-border {
     width: 472px;
-    height: 50px;
+    height: 50px;   
     border-radius: 5px;
-    background: #FFF;
-    margin-top: 10px;
-    position: relative;
+    background-color: #FFF;
 }
 
-.login-lists a {
-    color: var(--767676, #767676);
+.quick-login-buttons span{
+    color: #767676;
     text-align: center;
-    font-family: Spoqa Han Sans Neo;
+    font-family: 'SpoqaHanSansNeo', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    position: absolute;
-    top: 15px;
-    right: 178px;
-}
-
-.simple-login img {
-    position: absolute;
-    top: 11px;
-    left: 12px;
 }
 
 .google {
-    border-radius: 5px;
-    border: 1px solid var(--767676, #767676);
-    background: #FFF;
+    border: 1px solid #767676;
 }
 
-.fb {
-    border-radius: 5px;
+.facebook {
     border: 1px solid #2D9CDB;
-    background: #FFF;
 }
 
 .naver {
-    border-radius: 5px;
     border: 1px solid #00BF18;
-    background: #FFF;
 }
 
-.kakaot {
-    border-radius: 5px;
+.kakaotalk {
     border: 1px solid #F2C94C;
-    background: #FFF;
 }
-*/

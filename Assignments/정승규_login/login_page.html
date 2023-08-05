@@ -13,12 +13,12 @@
     <section>
         <div class = "modal-container">
             <header> 
-                <span class = "header-text">로그인 또는 회원가입</span> 
-                <img src = "images/close.png" alt = "" />
+                <span class = "header-text default-font">로그인 또는 회원가입</span> 
+                <a href = "index.html"><img src = "images/close.svg" alt = "" /></a>
             </header>
             <main class = "main-container">
                 <div class = "input-area">
-                    <h2>위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+                    <h2 class = "default-font">위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
                     <form>
                         <label for = "user-id" ></label>
                         <input type = "text" id = "user-id" placeholder = "아이디">
@@ -27,40 +27,54 @@
                         <input type = "text" id = "user-pw" placeholder = "패스워드">
 
                         <div class = "checkbox-area">
-                            <input type = "checkbox" name = "maintain-login" id = "maintain-login">
-                            <label for = "maintain-login">로그인 상태 유지</label>
+                            <input class = "login-checkbox" type = "checkbox" name = "maintain-login" id = "maintain-login">
+                            <label class = "checkbox-text default-font" for = "maintain-login">로그인 상태 유지</label>
                         </div>
                     </form>
-                
 
-                    <div>
-                        <a href = "#">회원가입</a>
-                        <a href = "#">아이디/비밀번호찾기</a>
+                    <button class = "login-button" type = "button">
+                        <span class = "default-font">로그인</span>
+                    </button>
+                
+                    <div class = "signup-findInfo default-font">
+                        <a href = "#">
+                            <span>회원가입</span>
+                        </a>
+                        <span>|</span>
+                        <a href = "#">
+                            <span>아이디/비밀번호찾기</span>
+                        </a>
                     </div>
                 </div>
 
-                <p class = "or-text">또는</p>
+                <p class = "or-divider default-font">또는</p>
 
-                <div class = "simple-login">
-                    <ul class = "login-button">
-                        <li class = "login-lists google">
-                            <img src = "./img/Google__G__Logo 1.png" alt = "" />
-                            <a href = "#">구글 계정으로 로그인</a>
-                        </li>
-                        <li class = "login-lists fb">
-                            <img src = "./img/facebook.png" alt = "" />
-                            <a href = "#">페이스북 계정으로 로그인</a>
-                        </li>
-                        <li class = "login-lists naver">
-                            <img src = "./img/naver-logo.png" alt = "" />
-                            <a href = "#">네이버 계정으로 로그인</a>
-                        </li>
-                        <li class = "login-lists kakaot">
-                            <img src = "./img/message-circle.png" alt = "" />
-                            <a href = "#">카카오톡 계정으로 로그인</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class = "quick-login-buttons">
+                    <li class = "google lists-border">
+                        <button type = "button">
+                            <img src = "./images/google-logo.svg" alt = "google-logo" />
+                            <span>구글 계정으로 로그인</span>
+                        </button>
+                    </li>
+                    <li class = "facebook lists-border">
+                        <button type = "button">
+                            <img src = "./images/fb-logo.svg" alt = "google-logo" />
+                            <span>페이스북 계정으로 로그인</span>
+                        </button>
+                    </li>
+                    <li class = "naver lists-border">
+                        <button type = "button">
+                            <img src = "./images/naver-logo.svg" alt = "google-logo" />
+                            <span>네이버 계정으로 로그인</span>
+                        </button>
+                    </li>
+                    <li class = "kakaotalk lists-border">
+                        <button type = "button">
+                            <img src = "./images/kakao-logo.svg" alt = "google-logo" />
+                            <span>카카오 계정으로 로그인</span>
+                        </button>
+                    </li>
+                </ul>
             </main>
         </div>
     </section>
