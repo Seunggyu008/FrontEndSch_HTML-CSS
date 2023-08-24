@@ -1,0 +1,21 @@
+@mixin sample {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    &:hover{ //이런식으로 hover와 같이 이어붙히기 위해서 쓰인다.
+        @content
+    }
+}
+
+.one {
+    @include sample;
+    background-color: red;
+}
+
+.two {
+    @include sample;
+    background-color: blue;
+}
+
+//위의 예시 처럼 사용하는게 아니다

@@ -1,0 +1,92 @@
+// 'assets/img/icon_font_awesome1.png'
+// 'assets/img/icon_font_awesome2.png'
+// 'assets/img/icon_font_awesome3.png'
+$img-path: './assets/img/';
+$img-name: 'background.png';
+$icon-name: 'icon_font_awesome';
+
+//lists
+$sizes: 40px, 50px, 60px;
+
+//maps
+$font-sizes: (
+    "h1": 45px,
+    "h2": 19px,
+    "p": 16px
+);
+
+//문제 1: map을 사용하여 아래와 같이 출력되도록 하세요
+//maps에 저장되어 있는 key는 'back', 'icon'이 있습니다
+// path라는 변수도 사용해야된다
+nav {
+    background-image: url('assets/img/background.png');
+}
+
+.home {
+    background: url('assets/img/icon_font_awesome_home.png')
+}
+
+
+$path: 'assets/img/icon_font_awesome_home.png';
+$path-name: 'path name';
+$maps: (
+    "back": black,
+    "icon": 'assets/img/icon_font_awesome_home.png'
+);
+
+.nav_map {
+    background-image: url($path + $path-name);
+}
+
+.home_map {
+    background: map-get($maps, "icon")
+}
+
+//model answer
+$path: "./assets/img/";
+$img-set: (
+    "back": $path + "background.png",
+    "icon": $path + "icon-font-awesome"
+);
+
+nav {
+    background-image: url(map-get($img-set, "back"));
+}
+
+
+
+// 오류문제: 죄송합니다. 즉흥적으로 낸 문제여서ㅜㅜ
+// 연습문제 2번 lists를 사용해서 아래와 같이 출력되도록 하세요.
+// lists에 저장되어 있는 값은 'left', 'right', 'bottom'...
+// 원하는 출력 결과
+// .title {
+//     border-bottom: 1px solid black;
+// }
+
+$direction: (
+    "left",
+    "right",
+    "bottom",
+    "top"
+);
+
+// 이런 식으로 사방으로 만들 수 있습니다.
+// @each $dir in $direction {
+//     .title-#{$dir} {
+//         border-#{$dir}: 1px solid black;
+//     }
+// }
+
+// 될 줄 알았으나 되지 않습니다.
+.title {
+    border: {
+        &-nth($sizes, 1) {
+            border-bottom: 1px solid black;
+        }
+    }
+}
+
+
+
+
+

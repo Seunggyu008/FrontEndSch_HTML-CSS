@@ -1,0 +1,15 @@
+nav {
+  background-image: url("assets/img/background.png");
+}
+
+.home {
+  background: url("assets/img/icon_font_awesome_home.png");
+}
+
+.nav_map {
+  background-image: url("assets/img/icon_font_awesome_home.pngpath name");
+}
+
+.home_map {
+  background: "assets/img/icon_font_awesome_home.png";
+}/*# sourceMappingURL=011_variables_practice.css.map */
