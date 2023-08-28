@@ -1,0 +1,16 @@
+path {
+    stroke: royalblue;
+    stroke-width: 10px;
+    stroke-dasharray: 1600;
+    animation: svg 2s;
+}
+
+@keyframes svg {
+    from {
+      stroke-dashoffset: 1600;
+    }
+
+    to {
+    stroke-dashoffset: 0;
+    }
+}
